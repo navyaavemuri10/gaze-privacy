@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gaze — Privacy Policy</title>
+<style>
+  :root { --ink:#1c1c1c; --muted:#5a5a5a; --peri:#6B80DC; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    color: var(--ink); line-height: 1.65; background: #fafafa;
+    padding: 60px 24px 100px;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; }
+  .mark {
+    width: 56px; height: 56px; border-radius: 50%; background: var(--peri);
+    display: flex; align-items: center; justify-content: center; gap: 7px;
+    margin-bottom: 28px;
+  }
+  .eye {
+    width: 13px; height: 17px; background: #fff;
+    border-radius: 7px 7px 2px 2px; position: relative; overflow: hidden;
+  }
+  .eye::after {
+    content: ''; position: absolute; bottom: 0; left: 1px; right: 1px;
+    height: 48%; background: #000; border-radius: 6px 6px 1px 1px;
+  }
+  h1 { font-size: 30px; font-weight: 600; margin-bottom: 6px; letter-spacing: -.5px; }
+  .updated { color: var(--muted); font-size: 14px; margin-bottom: 36px; }
+  h2 { font-size: 17px; font-weight: 600; margin: 32px 0 8px; }
+  p { margin-bottom: 12px; color: #2e2e2e; }
+  ul { margin: 0 0 12px 20px; color: #2e2e2e; }
+  li { margin-bottom: 6px; }
+  .callout {
+    background: #fff; border: 1px solid #e6e6e6; border-left: 3px solid var(--peri);
+    border-radius: 8px; padding: 16px 18px; margin: 20px 0;
+  }
+  .callout strong { font-weight: 600; }
+  footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid #e2e2e2; color: var(--muted); font-size: 14px; }
+  a { color: var(--peri); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="mark" aria-hidden="true"><div class="eye"></div><div class="eye"></div></div>
+
+  <h1>Privacy Policy for Gaze</h1>
+  <p class="updated">Last updated: REPLACE_WITH_DATE</p>
+
+  <div class="callout">
+    <strong>The short version:</strong> Gaze does not collect, transmit, or sell any
+    personal data. Everything it remembers stays on your own device.
+  </div>
+
+  <h2>What Gaze stores</h2>
+  <p>Gaze saves a small amount of information locally on your computer using Chrome's
+  storage, so it can remember your setup between sessions:</p>
+  <ul>
+    <li>The number of breaks you've taken</li>
+    <li>The date you started using Gaze</li>
+    <li>Your preferences (idle detection, screen sharing detection, pause state)</li>
+    <li>Timer state, such as when your next break is due</li>
+  </ul>
+  <p>This information never leaves your device. There is no Gaze account, no server,
+  and no analytics.</p>
+
+  <h2>What Gaze does not do</h2>
+  <ul>
+    <li>It does not collect personal or identifying information</li>
+    <li>It does not track your browsing history or the pages you visit</li>
+    <li>It does not read, store, or transmit page content</li>
+    <li>It does not send data to any external server</li>
+    <li>It does not use analytics, advertising, or third-party trackers</li>
+    <li>It does not sell or share data with anyone</li>
+  </ul>
+
+  <h2>Permissions and why they're needed</h2>
+  <ul>
+    <li><strong>Storage</strong> — saves your break count and preferences on your device.</li>
+    <li><strong>Alarms</strong> — schedules the 20-minute reminder.</li>
+    <li><strong>Idle</strong> — detects when you step away so reminders pause instead of
+    piling up. Gaze only reads whether the system is active, idle, or locked. It cannot
+    see what you are doing.</li>
+    <li><strong>Notifications</strong> — shows a reminder if the popup can't open on its own.</li>
+    <li><strong>Scripting and website access (optional)</strong> — used only if you turn on
+    "Screen Sharing Detection." When enabled, Gaze checks whether a screen share has started
+    so it can pause reminders and avoid interrupting your presentation. It looks only at
+    whether sharing is active — never at page content. This permission is off by default and
+    you can revoke it at any time by turning the setting off.</li>
+  </ul>
+
+  <h2>Children's privacy</h2>
+  <p>Gaze does not knowingly collect information from anyone, including children under 13,
+  because it does not collect information at all.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes, the updated version will be posted on this page with a new
+  date at the top.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about privacy in Gaze? Reach out at
+  <a href="mailto:REPLACE_WITH_EMAIL">REPLACE_WITH_EMAIL</a>.</p>
+
+  <footer>Gaze is an independent project. It is not affiliated with Google or Chrome.</footer>
+</div>
+</body>
+</html>
